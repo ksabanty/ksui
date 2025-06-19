@@ -103,16 +103,6 @@ This project uses GitHub Actions for continuous integration and deployment. The 
 
 ### Local Development with CI Tools
 
-Install golangci-lint locally:
-```bash
-go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
-```
-
-Run linting:
-```bash
-golangci-lint run
-```
-
 ## Project Structure
 
 ```
@@ -121,7 +111,6 @@ ksui/
 ├── main_test.go         # Test suite
 ├── Dockerfile           # Docker configuration
 ├── .dockerignore        # Docker build exclusions
-├── .golangci.yml        # Linting configuration
 ├── go.mod               # Go module definition
 ├── go.sum               # Go module checksums
 ├── templates/
