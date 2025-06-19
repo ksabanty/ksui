@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ksabanty.com</title>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+    <h1>Welcome to ksabanty.com</h1>
+    <p>This is a simple HTML page that uses HTMX to load content dynamically.</p>
+    <button hx-get="/api/message" hx-target="#msg" hx-swap="innerHTML">Load Content</button>
+    <div id="msg"></div>
+</body>
+</html>
