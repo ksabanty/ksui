@@ -1,0 +1,36 @@
+# Git
+.git
+.gitignore
+
+# GitHub Actions
+.github
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage
+coverage.out 
