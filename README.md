@@ -6,7 +6,7 @@ A simple Go web application that demonstrates HTMX integration with a clean, mod
 
 - **HTMX Integration**: Dynamic content loading without JavaScript
 - **Go Backend**: Fast, efficient HTTP server
-- **Template Rendering**: Server-side HTML templates
+- **Template Rendering**: Server-side HTML templatesgit 
 - **RESTful API**: Clean API endpoints for dynamic content
 
 ## Quick Start
