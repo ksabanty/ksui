@@ -6,6 +6,9 @@ import (
 )
 
 func main() {
+	// Serve static files (CSS)
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("templates"))))
+
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		tmpl := template.Must(template.ParseFiles("templates/index.html"))
 		tmpl.Execute(w, nil)
