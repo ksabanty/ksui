@@ -8,6 +8,7 @@ import (
 func main() {
 	// Serve static files (CSS)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("templates"))))
+	http.Handle("/images/", http.StripPrefix("/images/", http.FileServer(http.Dir("images"))))
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		tmpl := template.Must(template.ParseFiles("templates/index.html"))
@@ -26,6 +27,11 @@ func main() {
 
 	http.HandleFunc("/links", func(w http.ResponseWriter, r *http.Request) {
 		tmpl := template.Must(template.ParseFiles("templates/links.html"))
+		tmpl.Execute(w, nil)
+	})
+
+	http.HandleFunc("/sports", func(w http.ResponseWriter, r *http.Request) {
+		tmpl := template.Must(template.ParseFiles("templates/sports.html"))
 		tmpl.Execute(w, nil)
 	})
 
